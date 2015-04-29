@@ -13,7 +13,7 @@ export default function valueToFirebase (value) {
   if (typeof value === 'function') {
     throw new Error(`Firebase cannot accept function values: ${value.toString()}`)
   }
-  if (value instanceof Date || value instanceof RegExp) {
+  if (value instanceof Date || value instanceof RegExp || value === null) {
     return null
   }
   if (typeof value === 'object') {

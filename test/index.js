@@ -15,6 +15,7 @@ test((t) => {
 
   t.equal(toFirebase(new Date()), null)
   t.equal(toFirebase(/Firebase/), null)
+  t.equal(toFirebase(null), null)
 
   t.deepEqual(toFirebase([0, 1]), {'0': 0, '1': 1})
   t.notOk(Array.isArray(toFirebase([0, 1])))
