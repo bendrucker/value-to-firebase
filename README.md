@@ -24,4 +24,4 @@ $ npm install value-to-firebase
 
 Other values (e.g. `String` and `Number`) are returned as-is. 
 
-Objects are *not* recursively transformed—only top level key/value pairs are evaluated. If you want to recursively transform an object using `valueToFirebase`, use [object-to-firebase](https://github.com/bendrucker/object-to-firebase). 
+Objects are *not* recursively transformed—only top level keys are evaluated. If you want to recursively transform an object using `valueToFirebase`, use [object-to-firebase](https://github.com/bendrucker/object-to-firebase). 
