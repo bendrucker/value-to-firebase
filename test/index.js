@@ -22,6 +22,8 @@ test((t) => {
   t.equal(toFirebase([]), null)
   t.equal(toFirebase({}), null)
   t.deepEqual(toFirebase({foo: 'bar'}), {foo: 'bar'})
+  t.throws(when({'foo/': 'bar'}), /cannot accept key "foo\/"/)
+  t.throws(when({'': 'bar'}), /cannot accept key ""/)
 
   t.end()
 })
