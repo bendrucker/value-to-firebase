@@ -1,0 +1,33 @@
+{
+  "name": "value-to-firebase",
+  "version": "1.0.0",
+  "description": "Convert a JS value into its Firebase representation",
+  "main": "./src",
+  "scripts": {
+    "test": "babel-tape-runner test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bendrucker/value-to-firebase.git"
+  },
+  "keywords": [
+    "firebase",
+    "value",
+    "data"
+  ],
+  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendrucker/value-to-firebase/issues"
+  },
+  "homepage": "https://github.com/bendrucker/value-to-firebase#readme",
+  "devDependencies": {
+    "babel": "~5.1.13",
+    "babel-tape-runner": "~1.1.0",
+    "tape": "~4.0.0"
+  },
+  "dependencies": {
+    "babel-runtime": "~5.1.13",
+    "xtend": "~4.0.0"
+  }
+}
