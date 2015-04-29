@@ -28,8 +28,8 @@
     "tape": "~4.0.0"
   },
   "dependencies": {
-    "babel-runtime": "~5.1.13",
+    "babel-runtime": "^5.0.0",
     "firebase-validate-key": "~1.0.0",
-    "xtend": "~4.0.0"
+    "xtend": "^4.0.0"
   }
 }
