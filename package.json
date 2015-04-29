@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "babel-runtime": "~5.1.13",
+    "firebase-validate-key": "~1.0.0",
     "xtend": "~4.0.0"
   }
 }

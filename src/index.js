@@ -1,5 +1,6 @@
 'use strict'
 
+import validateKey from 'firebase-validate-key'
 import extend from 'xtend'
 import find from 'babel-runtime/core-js/array/find'
 
@@ -22,16 +23,7 @@ export default function valueToFirebase (value) {
     }
     const keys = Object.keys(value)
     if (!keys.length) return null
-    const invalidKey = findInvalidKey(keys)
-    if (invalidKey != null) {
-      throw new Error(`Firebase cannot accept key "${invalidKey}" in ${JSON.stringify(value)}`)
-    }
+    keys.forEach(validateKey)
   }
   return value
-}
-
-function findInvalidKey (keys) {
-  return find(keys, (key) => {
-    return !key || illegal.some(character => ~key.indexOf(character))
-  })
 }
