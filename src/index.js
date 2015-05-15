@@ -4,8 +4,6 @@ import validateKey from 'firebase-validate-key'
 import extend from 'xtend'
 import find from 'babel-runtime/core-js/array/find'
 
-const illegal = ['.', '$', '#', '[', ']', '/']
-
 export default function valueToFirebase (value) {
   if (typeof value === 'undefined') {
     throw new Error('Firebase cannot accept undefined values')
