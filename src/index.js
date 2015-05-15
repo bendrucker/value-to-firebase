@@ -28,4 +28,4 @@ export default function valueToFirebase (value) {
   return value
 }
 
-export const sv = serverValue
+valueToFirebase.sv = sv
