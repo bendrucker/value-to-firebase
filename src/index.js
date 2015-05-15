@@ -3,6 +3,7 @@
 import validateKey from 'firebase-validate-key'
 import extend from 'xtend'
 import find from 'babel-runtime/core-js/array/find'
+import * as serverValue from 'firebase-server-value'
 
 export default function valueToFirebase (value) {
   if (typeof value === 'undefined') {
@@ -15,6 +16,7 @@ export default function valueToFirebase (value) {
     return null
   }
   if (typeof value === 'object') {
+    if (serverValue.is(value)) return serverValue.parse(value)
     if (Array.isArray(value)) {
       if (!value.length) return null
       value = extend({}, value)
@@ -25,3 +27,5 @@ export default function valueToFirebase (value) {
   }
   return value
 }
+
+export const sv = serverValue

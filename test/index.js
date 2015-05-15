@@ -26,5 +26,9 @@ test((t) => {
   t.throws(when({'foo/': 'bar'}))
   t.throws(when({'': 'bar'}))
 
+  t.equal(typeof toFirebase({
+    '.sv': 'timestamp'
+  }), 'number')
+
   t.end()
 })
