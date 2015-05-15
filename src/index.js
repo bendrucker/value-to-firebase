@@ -28,4 +28,4 @@ export default function valueToFirebase (value) {
   return value
 }
 
-valueToFirebase.sv = sv
+valueToFirebase.sv = serverValue
