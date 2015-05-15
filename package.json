@@ -1,6 +1,6 @@
 {
   "name": "value-to-firebase",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Convert a JS value into its Firebase representation",
   "main": "./src",
   "scripts": {
