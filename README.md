@@ -1,17 +1,29 @@
 # value-to-firebase [![Build Status](https://travis-ci.org/bendrucker/value-to-firebase.svg?branch=master)](https://travis-ci.org/bendrucker/value-to-firebase)
-Convert a JS value into its Firebase representation
 
-## Installing
+> Convert a JS value into its Firebase representation
+
+## Install
 
 ```sh
 $ npm install value-to-firebase
 ```
 
+## Usage
+
+```js
+var valueToFirebase = require('value-to-firebase')
+valueToFirebase({}) // => null
+valueToFirebase(undefined) // throw!
+```
+
 ## API
 
-##### `valueToFirebase(value)` -> `Any`
+#### `valueToFirebase(value)` -> `any`
 
-`valueToFirebase` converts common JavaScript values to their Firebase representations:
+##### value
+
+*Required*  
+Type: `any`
 
 * `undefined` is illegal and triggers an exception
 * `Function` is illegal and triggers an exception
@@ -26,5 +38,3 @@ $ npm install value-to-firebase
 Other values (e.g. `String` and `Number`) are returned as-is. 
 
 Objects are *not* recursively transformed—only top level keys are evaluated. If you want to recursively transform an object using `valueToFirebase`, use [object-to-firebase](https://github.com/bendrucker/object-to-firebase). 
-
-The copy of firebase-server-value in use is exported as `sv`. 
