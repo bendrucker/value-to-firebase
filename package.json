@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "firebase-server-value": "~1.0.0",
-    "firebase-validate-key": "~1.0.0",
+    "firebase-validate-key": "~2.0.0",
     "xtend": "~4.0.0"
   },
   "files": [

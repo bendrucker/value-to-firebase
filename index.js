@@ -22,7 +22,11 @@ module.exports = function valueToFirebase (value) {
     }
     var keys = Object.keys(value)
     if (!keys.length) return null
-    keys.forEach(validateKey)
+    keys.forEach(function (key) {
+      if (!validateKey(key)) {
+        throw new Error('Invalid Firebase key ' + key)
+      }
+    })
   }
   return value
 }
