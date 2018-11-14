@@ -1,4 +1,4 @@
-# value-to-firebase [![Build Status](https://travis-ci.org/bendrucker/value-to-firebase.svg?branch=master)](https://travis-ci.org/bendrucker/value-to-firebase)
+# value-to-firebase [![Build Status](https://travis-ci.org/bendrucker/value-to-firebase.svg?branch=master)](https://travis-ci.org/bendrucker/value-to-firebase) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/value-to-firebase.svg)](https://greenkeeper.io/)
 
 > Convert a JS value into its Firebase representation
 
