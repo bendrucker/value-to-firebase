@@ -23,7 +23,7 @@
   "homepage": "https://github.com/bendrucker/value-to-firebase#readme",
   "devDependencies": {
     "standard": "~12.0.1",
-    "tape": "~4.10.0"
+    "tape": "~4.11.0"
   },
   "dependencies": {
     "firebase-server-value": "~1.0.0",
